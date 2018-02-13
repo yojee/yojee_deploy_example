@@ -1,11 +1,20 @@
 # YojeeChatExample
 This is an example to test distributed deployment
 
+# Prerequisites
+- elixir 1.6
+- postgres
+- npm/node
+
 # Dev Setup
 
 1) Get dependencies
 ```
 mix deps.get
+cd assets
+npm install # This is to install assets
+# For production further configuration is required for digest.
+# https://hexdocs.pm/phoenix/deployment.html
 ```
 2) Configure your db in `config/dev.exs`and ideally in `prod.exs` for production deployment.
 
