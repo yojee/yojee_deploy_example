@@ -6,6 +6,13 @@ This is an example to test distributed deployment
 - postgres
 - npm/node
 
+# Related Links for production deployment
+- phoenix  https://hexdocs.pm/phoenix/deployment.html
+- Libcluster https://github.com/bitwalker/libcluster
+- libcluster ec2 plugin https://github.com/kyleaa/libcluster_ec2
+- distillery https://github.com/bitwalker/distillery
+- edeliver https://github.com/edeliver/edeliver
+
 # Dev Setup
 
 1) Get dependencies
@@ -13,8 +20,7 @@ This is an example to test distributed deployment
 mix deps.get
 cd assets
 npm install # This is to install assets
-# For production further configuration is required for digest.
-# https://hexdocs.pm/phoenix/deployment.html
+
 ```
 2) Configure your db in `config/dev.exs`and ideally in `prod.exs` for production deployment.
 
